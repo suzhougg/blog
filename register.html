@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册</title>
+    <link rel="icon" href="img/N.png" type="image/png">
+    <link rel="stylesheet" href="./css/login-register.min.css" />
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/theSame.min.js"></script>
+    <script type="text/javascript" src="./js/register.min.js"></script>
+    <style>
+        .return-index {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            padding: 10px;
+            box-shadow: 0 0 5px #dadada;
+            border-radius: 10px;
+            background-color: #000000;
+            color: #fffffe;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.1s ease-in-out;
+        }
+
+        .return-index:hover {
+            background-color: #282C34;
+        }
+
+        @media screen and (min-width: 1444px) {
+            .container {
+                margin-top: 10rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="height: 42.3rem">
+        <form class="form">
+            <div class="title">注册</div>
+            <div class="flex-column">
+                <label>邮箱</label>
+                <span class="error-message" id="email-error-message"></span>
+            </div>
+            <div class="inputForm">
+                <i class="iconfont icon-youxiang" style="font-size: 20px"></i>
+                <input type="email" class="input" placeholder="输入邮箱" id="emailInput"
+                    data-error-message-id="email-error-message" />
+            </div>
+            <div class="flex-column">
+                <label>密码</label>
+                <span class="error-message" id="password-error-message"></span>
+            </div>
+            <div class="inputForm">
+                <i class="iconfont icon-mima" style="font-size: 16px"></i>
+                <input type="password" class="input" id="passwordInput1" placeholder="输入密码"
+                    data-error-message-id="password-error-message" />
+                <i class="iconfont icon-yincangbukejian" id="showPassword1"
+                    style="font-size: 22px;cursor: pointer;"></i>
+            </div>
+            <div class="flex-column">
+                <label>确认密码</label>
+                <span class="error-message" id="confirm-password-error-message"></span>
+            </div>
+            <div class="inputForm">
+                <i class="iconfont icon-mima" style="font-size: 16px"></i>
+                <input type="password" class="input" id="passwordInput2" placeholder="再次输入密码"
+                    data-error-message-id="confirm-password-error-message" />
+                <i class="iconfont icon-yincangbukejian" id="showPassword2"
+                    style="font-size: 22px;cursor: pointer;"></i>
+            </div>
+            <div class="flex-row">
+                <div>
+                    <input type="checkbox" id="agreementCheckbox" />
+                    <label>
+                        我已阅读并同意
+                        <a class="kunkun" href="#">用户协议</a>
+                    </label>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="button-submit" id="registerButton">
+                    同意协议并提交
+                </button>
+            </div>
+            <p class="p">已有账号? <a class="span" href="./login.html">登录</a></p>
+            <p class="p line">通过其他方式</p>
+            <div class="flex-row">
+                <button class="btn yuanshen">
+                    <i class="iconfont icon-alipay" style="font-size: 17px"></i>
+                    <label style="font-size: 14px">支付宝</label></button><button class="btn WeChat">
+                    <i class="iconfont icon-weixin" style="font-size: 22px"></i>
+                    <label style="font-size: 14px">微信</label>
+                </button>
+            </div>
+        </form>
+    </div>
+    <a class="return-index" href="index.html"><span class="iconfont icon-fanhui" style="font-size: 18px;"></span>回到首页</a>
+</body>
+
+</html>
