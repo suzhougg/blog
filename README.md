@@ -9,8 +9,6 @@
 
 #### 安装教程
 
-1.  使用Https：git clone https://gitee.com/Herbert0501/mine-practice-web.git
-2.  使用SSH：git clone git@gitee.com:Herbert0501/mine-practice-web.git
 
 #### 使用说明
 
